@@ -4,12 +4,6 @@
 
 import Foundation
 
-struct Card: Equatable {
-	let id: Int
-	let number: String
-	let holder: String
-}
-
 class CardAPI {
 	static var shared = CardAPI()
 	

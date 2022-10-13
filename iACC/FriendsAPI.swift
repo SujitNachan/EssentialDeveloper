@@ -4,12 +4,6 @@
 
 import Foundation
 
-struct Friend: Equatable {
-	let id: UUID
-	let name: String
-	let phone: String
-}
-
 class FriendsAPI {
 	static var shared = FriendsAPI()
 	
@@ -22,4 +16,9 @@ class FriendsAPI {
 			]))
 		}
 	}
+}
+
+//Null object pattern
+class NullFriendsCache: FriendsCache {
+    override func save(_ newFriends: [Friend]) {}
 }

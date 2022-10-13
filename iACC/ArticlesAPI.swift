@@ -4,12 +4,6 @@
 
 import Foundation
 
-struct Article: Equatable {
-	let id: UUID
-	let title: String
-	let author: String
-}
-
 class ArticlesAPI {
 	static var shared = ArticlesAPI()
 	
